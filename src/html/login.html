@@ -11,13 +11,13 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
     <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
-    
+
     <!-- page css -->
     <link href="dist/css/pages/login-register-lock.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
-    
-    
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,7 +26,7 @@
 <![endif]-->
 </head>
 
-<body class="skin-blue card-no-border">
+<body class="skin-green card-no-border">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -50,12 +50,12 @@
                         <h6 class="box-title m-b-20 text-center">Welcome to s2s Managed Services Web Portal If you are an authorized user, please log in below</h6>
                         <div class="form-group ">
                             <div class="col-xs-12">
-                                <input class="form-control" type="text" required="" placeholder="Username"> 
+                                <input class="form-control" type="text" required="" placeholder="Username">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12">
-                                <input class="form-control" type="password" required="" placeholder="Password"> 
+                                <input class="form-control" type="password" required="" placeholder="Password">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -63,8 +63,8 @@
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="customCheck1">
                                     <label class="custom-control-label" for="customCheck1">Remember me</label>
-                                    <a href="javascript:void(0)" id="to-recover" class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i> Forgot password?</a> 
-                                </div> 
+                                    <a href="javascript:void(0)" id="to-recover" class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i> Forgot password?</a>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group text-center">
@@ -82,7 +82,7 @@
                         </div>
                         <div class="form-group ">
                             <div class="col-xs-12">
-                                <input class="form-control" type="text" required="" placeholder="Email"> 
+                                <input class="form-control" type="text" required="" placeholder="Email">
                             </div>
                         </div>
                         <div class="form-group text-center m-t-20">
@@ -95,7 +95,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
@@ -114,15 +114,15 @@
         $(function() {
             $('[data-toggle="tooltip"]').tooltip()
         });
-        // ============================================================== 
-        // Login and Recover Password 
-        // ============================================================== 
+        // ==============================================================
+        // Login and Recover Password
+        // ==============================================================
         $('#to-recover').on("click", function() {
             $("#loginform").slideUp();
             $("#recoverform").fadeIn();
         });
     </script>
-    
+
 </body>
 
 </html>

@@ -59,7 +59,7 @@
                         <!-- Logo text --><span>
                          <!-- dark Logo text -->
                          <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                         <!-- Light Logo text -->    
+                         <!-- Light Logo text -->
                          <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
                 </div>
                 <!-- ============================================================== -->
@@ -78,7 +78,7 @@
                     <!-- Logout Button -->
                     <!-- ============================================================== -->
                     <ul class="navbar-nav my-lg-0">
-                        <li class="nav-item"><a class="nav-link  waves-effect waves-light" href="javascript:void(0)"><i class="fa fa-power-off"></i><b> Logout</b></a></li>
+                        <li class="nav-item"><a class="nav-link  waves-effect waves-light" href="login.html"><i class="fa fa-power-off"></i><b> Logout</b></a></li>
                     </ul>
                 </div>
             </nav>
@@ -111,14 +111,14 @@
 
                         <!-- Profile Edit -->
                         <li><a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-pencil-square-o"></i><span class="hide-menu">Edit Profile</span></a></li>
-                        
+
                         <li class="nav-small-cap">--- MAIN MENU</li>
 
                         <li> <a href="admin_landing.html" class="waves-effect waves-dark"><i class="ti-layout-grid2"></i><span class="hide-menu"> Dashboard</span></a></li>
                         <li> <a href="admin_create_request.html" class="waves-effect waves-dark"><i class="ti-comment-alt"></i><span class="hide-menu"> Create Requests</span></a></li>
-                        <li> <a href="admin_provisions.html" class="waves-effect waves-dark"><i class="ti-support"></i><span class="hide-menu"> Provisioning Requests</span></a></li>
-                        <li> <a href="admin_customer_info.html" class="waves-effect waves-dark"><i class="ti-mobile"></i><span class="hide-menu"> Customer Info</span></a></li>
-                        <li> <a href="admin_registration.html" class="waves-effect waves-dark"><i class="ti-book"></i><span class="hide-menu"> Register Customer</span></a></li>
+                        <li> <a href="admin_provisions.html" class="waves-effect waves-dark"><i class="ti-support"></i><span class="hide-menu"> View All Requests</span></a></li>
+                        <li> <a href="admin_customer_info.html" class="waves-effect waves-dark"><i class="ti-mobile"></i><span class="hide-menu"> View Customers</span></a></li>
+                        <li> <a href="admin_registration.html" class="waves-effect waves-dark"><i class="ti-book"></i><span class="hide-menu"> Register User</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -141,7 +141,7 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h4 class="text-themecolor">Customer Information</h4>
+                        <h4 class="text-themecolor">Customer Details</h4>
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -234,7 +234,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="customerModalLabel1">EDIT CUSTOMER INFO</h4>
+                            <h4 class="modal-title" id="customerModalLabel1">EDIT CUSTOMER</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <div class="modal-body">
@@ -357,8 +357,10 @@
     <script src="../assets/node_modules/datatables/jquery.dataTables.min.js"></script>
     <script>
         $(document).ready(function() {
-        $('#myTable').DataTable();
-    });
+          $('#myTable').DataTable({
+            "bLengthChange": false,
+            "bSort": false});
+        });
     </script>
 </body>
 
