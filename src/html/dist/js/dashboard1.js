@@ -9,8 +9,9 @@ $(function () {
             , icon: 'info'
             , hideAfter: 3500
             , stack: 6
-        })
-        // Dashboard 1 Morris-chart
+        });
+
+    // Dashboard 1 Morris-chart
     Morris.Area({
         element: 'morris-area-chart'
         , data: [{
