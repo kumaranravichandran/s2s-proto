@@ -145,13 +145,13 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Company Name</label>
+                                                    <label class="control-label">Company Name*</label>
                                                     <input type="text" id="company_name" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Status</label>
+                                                    <label class="control-label">Status*</label>
                                                     <select class="form-control" data-placeholder="Select Status" tabindex="1">
                                                         <option value="Category 1">Prequal Request Received</option>
                                                         <option value="Category 2">Quote Provided</option>
@@ -164,9 +164,37 @@
                                         </div>
                                         <!--/row-->
                                         <div class="row">
+                                          <div class="col-md-3">
+                                            <div class="form-group">
+                                              <label class="control-label">Site ID*</label>
+                                              <input type="text" id="site_id" class="form-control">
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-group">
+                                              <label class="control-label">Location Phone #</label>
+                                              <input type="text" id="location_phone" class="form-control">
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-group">
+                                              <label class="control-label">Site Contact</label>
+                                              <input type="text" id="site_contact" class="form-control">
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-group">
+                                              <label class="control-label">Site Contact Phone #</label>
+                                              <input type="text" id="site_contact_phone" class="form-control">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!--/row-->
+                                        <!--/row-->
+                                        <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Address Line 1</label>
+                                                    <label class="control-label">Address Line 1*</label>
                                                     <input type="text" id="address_line_1" class="form-control">
                                                 </div>
                                             </div>
@@ -181,18 +209,18 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Address Line 2</label>
+                                                    <label class="control-label">Address Line 2*</label>
                                                     <input type="text" id="address_line_2" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Service Type Preferred</label>
-                                                    <select class="form-control" data-placeholder="Select service" tabindex="1">
-                                                        <option value="Category 1">Managed Broadband Service</option>
-                                                        <option value="Category 2">Bring Your Own Broadband</option>
-                                                        <option value="Category 3">Manged Network Service</option>
-                                                        <option value="Category 4">Managed WiFi Service</option>
+                                                    <label class="control-label">Circuit Purpose</label>
+                                                    <select class="form-control" data-placeholder="Select Circuit Purpose" id="circuit_purpose" tabindex="1">
+                                                        <option value="Primary">Primary</option>
+                                                        <option value="Backup">Backup</option>
+                                                        <option value="VoIP">VoIP</option>
+                                                        <option value="Other">Other</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -201,38 +229,31 @@
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label class="control-label">City</label>
+                                                    <label class="control-label">City*</label>
                                                     <input type="text" id="city" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
-                                                    <label class="control-label">State</label>
+                                                    <label class="control-label">State*</label>
                                                     <select class="form-control" data-placeholder="Select State" tabindex="1">
                                                         <option value="state">NC</option>
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Bandwidth Required</label>
-                                                    <input type="text" id="bandwidth_required" class="form-control" placeholder="2TB">
-                                                </div>
-                                            </div>
                                         </div>
-                                        <!--/row-->
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Postal Code</label>
-                                                    <input type="text" id="postal_code" class="form-control">
-                                                </div>
+                                            <div class="col-md-3">
+                                              <div class="form-group">
+                                                <label class="control-label">Zip Code*</label>
+                                                <input type="text" id="zip_code" class="form-control">
+                                              </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Country</label>
-                                                    <input type="text" id="country" class="form-control">
-                                                </div>
+                                            <div class="col-md-3">
+                                              <div class="form-group">
+                                                <label class="control-label">Country</label>
+                                                <input type="text" id="country" class="form-control" value="USA" readonly>
+                                              </div>
                                             </div>
                                         </div>
                                         <!--/row-->
@@ -244,28 +265,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--/row-->
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="white-box">
-                                                    <h3 class="box-title">WORKLOG INFORMATION</h3>
-                                                    <h5>Edited by : Prashant</h5>
-                                                    <div class="progress m-b-0">
-                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:100%;"> <span class="sr-only">20% Complete</span> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="white-box">
-                                                    <h3 class="box-title">ADDITIONAL INFORMATION</h3>
-                                                    <h5>Created by : Mani</h5>
-                                                    <div class="progress m-b-0">
-                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:100%;"> <span class="sr-only">20% Complete</span> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--/row-->
                                     </div>
                                     <div class="form-actions p-t-20">
                                         <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Save</button>
