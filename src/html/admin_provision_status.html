@@ -16,6 +16,9 @@
     <link href="dist/css/style.min.css" rel="stylesheet">
     <!-- Dashboard 1 Page CSS -->
     <link href="dist/css/pages/dashboard1.css" rel="stylesheet">
+    <!-- DatePicker CSS -->
+    <link href="../assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+
   <style>
     .status-circle {
       width: 140px;
@@ -229,7 +232,7 @@
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label class="control-label">Company Name*</label>
-                                <input type="text" id="company_name" class="form-control">
+                                <input type="text" id="company_name" class="form-control" value="Gibi Systems">
                               </div>
                             </div>
                             <div class="col-md-6">
@@ -250,25 +253,25 @@
                             <div class="col-md-3">
                               <div class="form-group">
                                 <label class="control-label">Site ID*</label>
-                                <input type="text" id="site_id" class="form-control">
+                                <input type="text" id="site_id" class="form-control" value="123">
                               </div>
                             </div>
                             <div class="col-md-3">
                               <div class="form-group">
                                 <label class="control-label">Location Phone #</label>
-                                <input type="text" id="location_phone" class="form-control">
+                                <input type="text" id="location_phone" class="form-control" value="2012456668">
                               </div>
                             </div>
                             <div class="col-md-3">
                               <div class="form-group">
                                 <label class="control-label">Site Contact</label>
-                                <input type="text" id="site_contact" class="form-control">
+                                <input type="text" id="site_contact" class="form-control" value="kumaran">
                               </div>
                             </div>
                             <div class="col-md-3">
                               <div class="form-group">
                                 <label class="control-label">Site Contact Phone #</label>
-                                <input type="text" id="site_contact_phone" class="form-control">
+                                <input type="text" id="site_contact_phone" class="form-control" value="8666542102">
                               </div>
                             </div>
                           </div>
@@ -278,13 +281,13 @@
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label class="control-label">Address Line 1*</label>
-                                <input type="text" id="address_line_1" class="form-control">
+                                <input type="text" id="address_line_1" class="form-control" value="2442 courtney oaks rd">
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label class="control-label">Created By</label>
-                                <input type="text" id="created_by" class="form-control">
+                                <input type="text" id="created_by" class="form-control" value="prashant">
                               </div>
                             </div>
                           </div>
@@ -313,7 +316,7 @@
                             <div class="col-md-3">
                               <div class="form-group">
                                 <label class="control-label">City*</label>
-                                <input type="text" id="city" class="form-control">
+                                <input type="text" id="city" class="form-control" value="charlotte">
                               </div>
                             </div>
                             <div class="col-md-3">
@@ -324,12 +327,18 @@
                                 </select>
                               </div>
                             </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label class="control-label">Quote Provided</label>
+                                <input type="text" id="quote_provided" class="form-control" value="2018-06-01">
+                              </div>
+                            </div>
                           </div>
                           <div class="row">
                             <div class="col-md-3">
                               <div class="form-group">
                                 <label class="control-label">Zip Code*</label>
-                                <input type="text" id="zip_code" class="form-control">
+                                <input type="text" id="zip_code" class="form-control" value="28217">
                               </div>
                             </div>
                             <div class="col-md-3">
@@ -366,7 +375,7 @@
                         <div class="col-md-3">
                           <div class="form-group">
                             <label class="control-label">Order Received</label>
-                            <input type="text" id="order-recieved" class="form-control">
+                            <input type="text" id="order-recieved" class="form-control" value="2018-06-05">
                           </div>
                         </div>
                       </div>
@@ -375,7 +384,7 @@
                         <div class="col-md-3">
                           <div class="form-group">
                             <label class="control-label">Order Placed With ISP</label>
-                            <input type="text" id="order-placed" class="form-control">
+                            <input type="text" id="order-placed" class="form-control" value="2018-06-07">
                           </div>
                         </div>
                       </div>
@@ -384,11 +393,10 @@
                         <div class="col-md-3">
                           <div class="form-group">
                             <label class="control-label">Circuit Installed</label>
-                            <input type="text" id="circuit-install" class="form-control">
+                            <input type="text" id="circuit-install" class="form-control" value="2018-06-10">
                           </div>
                         </div>
                       </div>
-
 
                     </div>
                   </div>
@@ -491,6 +499,17 @@
     <script src="dist/js/custom.min.js"></script>
     <!-- Dashboard 1 JS -->
     <script src="dist/js/dashboard1.js"></script>
+    <!-- DatePicker JS -->
+    <script src="../assets/node_modules/moment/moment.js"></script>
+    <script src="../assets/node_modules/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('#circuit-install,#order-placed,#order-recieved,#quote_provided').each(function(){
+          $(this).bootstrapMaterialDatePicker({ weekStart: 0, time: false });
+        });
+      });
+    </script>
 </body>
 
 </html>
