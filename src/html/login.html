@@ -43,14 +43,14 @@
         <div class="login-register" style="background-image:url(../assets/images/background/login-register.jpg);">
             <div class="login-box card">
                 <div class="card-body">
-                    <form class="form-horizontal" id="loginform" action="admin_landing.html">
+                    <form class="form-horizontal" id="loginform" action="javascript:submitForm(this);">
                         <div class="text-center db m-b-10">
                             <img src="dist/img/S2S.jpg" alt="logo">
                         </div>
                         <h6 class="box-title m-b-20 text-center">Welcome to s2s Managed Services Web Portal If you are an authorized user, please log in below</h6>
                         <div class="form-group ">
                             <div class="col-xs-12">
-                                <input class="form-control" type="text" required="" placeholder="Username">
+                                <input class="form-control" id="username" type="text" required="" placeholder="Username">
                             </div>
                         </div>
                         <div class="form-group">
@@ -121,6 +121,12 @@
             $("#loginform").slideUp();
             $("#recoverform").fadeIn();
         });
+
+        function submitForm() {
+          window.location.href = $('#username').val() === 'aadmin' ?
+            'admin_landing.html' :
+            'cust_landing.html';
+        }
     </script>
 
 </body>
