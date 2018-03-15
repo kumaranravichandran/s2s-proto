@@ -11167,7 +11167,7 @@ Table-Data Table
       transition-duration: 0.3s; }
 
 .dataTables_filter {
-  float: right;
+  float: left;
   margin-top: 10px; }
   .dataTables_filter input {
     border: 0;
