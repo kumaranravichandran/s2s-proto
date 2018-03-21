@@ -22,3 +22,9 @@
 *******************/
 .cmin-height {
   height: 105px; }
+
+
+label.required:after {
+  content: " *";
+  color: red;
+}
