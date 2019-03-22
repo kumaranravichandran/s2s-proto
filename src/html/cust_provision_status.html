@@ -233,9 +233,13 @@
             <a class="nav-item nav-link active" id="nav-site-tab" data-toggle="tab" href="#nav-site" role="tab"
               aria-controls="nav-site" aria-selected="true">Site Details</a>
             <a class="nav-item nav-link" id="nav-quote-tab" data-toggle="tab" href="#nav-quote" role="tab"
-              aria-controls="nav-quote" aria-selected="false">PreQual Details</a>
+              aria-controls="nav-quote" aria-selected="false">PreQualification</a>
             <a class="nav-item nav-link" id="nav-circuit-tab" data-toggle="tab" href="#nav-circuit" role="tab"
-              aria-controls="nav-circuit" aria-selected="false">Circuit Details</a>
+              aria-controls="nav-circuit" aria-selected="false">Circuit</a>
+            <a class="nav-item nav-link" id="nav-devices-tab" data-toggle="tab" href="#nav-devices" role="tab"
+            aria-controls="nav-devices" aria-selected="false">Devices</a>
+            <a class="nav-item nav-link" id="nav-dispatch-tab" data-toggle="tab" href="#nav-dispatch" role="tab"
+            aria-controls="nav-dispatch" aria-selected="false">Tech Dispatch</a>
           </div>
         </nav>
 
@@ -380,134 +384,161 @@
                 </div>
               </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header">
+                      Site Notes
+                      <a href="#" class="float-right btn btn-primary" data-toggle="modal" data-target="#notesEditModal"><i class="fa fa-plus-circle mr-2"></i>create</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="myTable" class="table table-hover">
+                            <thead>
+                                <th>User</th>
+                                <th>Notes</th>
+                                <th>Date Created</th>
+                                <th>Date Updated</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>prashant</td>
+                                  <td>
+                                      asda dasdas dasd asd asd asd asd as das d asd asd asd asdasd asdlasfa df adf a fafe fadfa adsfqefd dfadf dfsdfdsfd
+                                  </td>
+                                  <td>12-12-2018</td>
+                                  <td>12-12-2018</td>
+                                  <td>
+                                <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#notesEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>prashant</td>
+                                  <td>
+                                      asda dasdas dasd asd asd asd asd as das d asd asd asd asdasd asdlasfa df adf a fafe fadfa adsfqefd dfadf dfsdfdsfd
+                                  </td>
+                                  <td>12-12-2018</td>
+                                  <td>12-12-2018</td>
+                                  <td>
+                                <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#notesEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                  </td>
+                                </tr>
+                              <tr>
+                                  <td>prashant</td>
+                                  <td>
+                                      asda dasdas dasd asd asd asd asd as das d asd asd asd asdasd asdlasfa df adf a fafe fadfa adsfqefd dfadf dfsdfdsfd
+                                  </td>
+                                  <td>12-12-2018</td>
+                                  <td>12-12-2018</td>
+                                  <td>
+                                <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#notesEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>prashant</td>
+                                  <td>
+                                      asda dasdas dasd asd asd asd asd as das d asd asd asd asdasd asdlasfa df adf a fafe fadfa adsfqefd dfadf dfsdfdsfd
+                                  </td>
+                                  <td>12-12-2018</td>
+                                  <td>12-12-2018</td>
+                                  <td>
+                                <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#notesEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                  </td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
           <div class="tab-pane fade" id="nav-quote" role="tabpanel" aria-labelledby="nav-quote-tab">
             <div class="row">
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <a href="cust_create_prequal.html" class="float-right btn btn-primary"><i class="fa fa-plus-circle mr-3"></i>create</a>
+                    <a href="#" class="float-right btn btn-primary" data-toggle="modal" data-target="#prequalEditModal"><i class="fa fa-plus-circle mr-3"></i>create</a>
                     <input type="text" class="form-control float-right mr-2" placeholder="search provider" style="width: 40%;">
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-3 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">Belk Inc</h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">Prequal Complete</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">02/10/2019</div>
-                          <p class="card-text">username :: Last comment from the user</p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 offset-md-1 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">Belk Inc</h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">Prequal Complete</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">02/10/2019</div>
-                          <p class="card-text">username :: Last comment from the user</p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 offset-md-1 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">Belk Inc</h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">Prequal Complete</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">02/10/2019</div>
-                          <p class="card-text">username :: Last comment from the user</p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">Belk Inc</h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">Prequal Complete</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">02/10/2019</div>
-                          <p class="card-text">username :: Last comment from the user</p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 offset-md-1 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">Belk Inc</h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">Prequal Complete</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">02/10/2019</div>
-                          <p class="card-text">username :: Last comment from the user</p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 offset-md-1 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">Belk Inc</h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">Prequal Complete</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">02/10/2019</div>
-                          <p class="card-text">username :: Last comment from the user</p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">Belk Inc</h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">Prequal Complete</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">02/10/2019</div>
-                          <p class="card-text">username :: Last comment from the user</p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 offset-md-1 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">Belk Inc</h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">Prequal Complete</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">02/10/2019</div>
-                          <p class="card-text">username :: Last comment from the user</p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 offset-md-1 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">Belk Inc</h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">Prequal Complete</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">02/10/2019</div>
-                          <p class="card-text">username :: Last comment from the user</p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="table-responsive">
+                        <table id="myTable" class="table table-hover">
+                            <thead>
+                            <th>Provider</th>
+                            <th>Action</th>
+                            <th>Service Type</th>
+                            <th>Requestor</th>
+                            <th>Date</th>
+                            <th></th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>Sudden Link</td>
+                              <td>Prequal Complete</td>
+                              <td>Internet</td>
+                              <td>Gibi Systems</td>
+                              <td>06-21-2017</td>
+                              <td>
+                                  <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#prequalEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td>Sudden Link</td>
+                                <td>Prequal Complete</td>
+                                <td>Internet</td>
+                                <td>Gibi Systems</td>
+                                <td>06-21-2017</td>
+                                <td>
+                                    <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#prequalEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                  <td>Sudden Link</td>
+                                  <td>Prequal Complete</td>
+                                  <td>Internet</td>
+                                  <td>Gibi Systems</td>
+                                  <td>06-21-2017</td>
+                                  <td>
+                                      <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#prequalEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>Sudden Link</td>
+                                    <td>Prequal Complete</td>
+                                    <td>Internet</td>
+                                    <td>Gibi Systems</td>
+                                    <td>06-21-2017</td>
+                                    <td>
+                                        <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#prequalEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>Sudden Link</td>
+                                      <td>Prequal Complete</td>
+                                      <td>Internet</td>
+                                      <td>Gibi Systems</td>
+                                      <td>06-21-2017</td>
+                                      <td>
+                                          <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#prequalEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sudden Link</td>
+                                        <td>Prequal Complete</td>
+                                        <td>Internet</td>
+                                        <td>Gibi Systems</td>
+                                        <td>06-21-2017</td>
+                                        <td>
+                                            <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#prequalEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                        </td>
+                                      </tr>
+                            </tbody>
+                          </table>
+                    </div>
+
                     </div>
                     <nav aria-label="Page navigation example">
                       <ul class="pagination justify-content-center">
@@ -562,220 +593,121 @@
                   </div>
                 </div>
               </div>
-            </div>
           </div>
           <div class="tab-pane fade" id="nav-circuit" role="tabpanel" aria-labelledby="nav-circuit-tab">
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <button class="float-right btn btn-primary"><i class="fa fa-plus-circle mr-3"></i>create</button>
-                    <input type="text" class="form-control float-right mr-2" placeholder="search provider" style="width: 40%;">
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-3 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">
-                            Belk_667_C
-                            <small class="float-sm-right">4153</small>
-                          </h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">3-Production</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">Sudden Link</div>
-                          <p class="card-text">
-                            <p>Function: voip</p>
-                            <p>ID: Belk_667_Backup</p>
-                            <p>ServiceType: VOIP</p>
-                            <p>OwnerShip: S2S Provisioned</p>
-                          </p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
+              <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <a href="#" class="float-right btn btn-primary" data-toggle="modal" data-target="#circuitEditModal"><i class="fa fa-plus-circle mr-3"></i>create</a>
+                        <input type="text" class="form-control float-right mr-2" placeholder="search provider" style="width: 40%;">
                       </div>
-                      <div class="col-md-3 offset-md-1 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">
-                            Belk_667_C
-                            <small class="float-sm-right">4153</small>
-                          </h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">3-Production</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">Sudden Link</div>
-                          <p class="card-text">
-                            <p>Function: voip</p>
-                            <p>ID: Belk_667_Backup</p>
-                            <p>ServiceType: VOIP</p>
-                            <p>OwnerShip: S2S Provisioned</p>
-                          </p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
+                      <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="myTable" class="table table-hover">
+                                <thead>
+                                <th>Circuit Name</th>
+                                <th>Circuit Status</th>
+                                <th>Circuit Provider</th>
+                                <th>Circuit Function</th>
+                                <th>Service Type</th>
+                                <th>Ownership Level</th>
+                                <th></th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                  <td>Belk_667_cell</td>
+                                  <td>3-Production</td>
+                                  <td>At&T</td>
+                                  <td>VoIP</td>
+                                  <td>Mobile Wireless</td>
+                                  <td>S2S Provisional</td>
+                                  <td>
+                                      <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#circuitEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>Belk_667_cell</td>
+                                    <td>3-Production</td>
+                                    <td>At&T</td>
+                                    <td>VoIP</td>
+                                    <td>Mobile Wireless</td>
+                                    <td>S2S Provisional</td>
+                                    <td>
+                                        <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#prequalEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td>Belk_667_cell</td>
+                                      <td>3-Production</td>
+                                      <td>At&T</td>
+                                      <td>VoIP</td>
+                                      <td>Mobile Wireless</td>
+                                      <td>S2S Provisional</td>
+                                      <td>
+                                          <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#prequalEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Belk_667_cell</td>
+                                        <td>3-Production</td>
+                                        <td>At&T</td>
+                                        <td>VoIP</td>
+                                        <td>Mobile Wireless</td>
+                                        <td>S2S Provisional</td>
+                                        <td>
+                                            <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#prequalEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                          <td>Belk_667_cell</td>
+                                          <td>3-Production</td>
+                                          <td>At&T</td>
+                                          <td>VoIP</td>
+                                          <td>Mobile Wireless</td>
+                                          <td>S2S Provisional</td>
+                                          <td>
+                                              <a class="waves-effect waves-dark" href="#" data-toggle="modal" data-target="#prequalEditModal"><i class="fa fa-edit fa-lg"></i></a>
+                                          </td>
+                                        </tr>
+
+                                </tbody>
+                              </table>
                         </div>
-                      </div>
-                      <div class="col-md-3 offset-md-1 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">
-                            Belk_667_C
-                            <small class="float-sm-right">4153</small>
-                          </h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">3-Production</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">Sudden Link</div>
-                          <p class="card-text">
-                            <p>Function: voip</p>
-                            <p>ID: Belk_667_Backup</p>
-                            <p>ServiceType: VOIP</p>
-                            <p>OwnerShip: S2S Provisioned</p>
-                          </p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
+
                         </div>
-                      </div>
-                      <div class="col-md-3 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">
-                            Belk_667_C
-                            <small class="float-sm-right">4153</small>
-                          </h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">3-Production</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">Sudden Link</div>
-                          <p class="card-text">
-                            <p>Function: voip</p>
-                            <p>ID: Belk_667_Backup</p>
-                            <p>ServiceType: VOIP</p>
-                            <p>OwnerShip: S2S Provisioned</p>
-                          </p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 offset-md-1 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">
-                            Belk_667_C
-                            <small class="float-sm-right">4153</small>
-                          </h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">3-Production</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">Sudden Link</div>
-                          <p class="card-text">
-                            <p>Function: voip</p>
-                            <p>ID: Belk_667_Backup</p>
-                            <p>ServiceType: VOIP</p>
-                            <p>OwnerShip: S2S Provisioned</p>
-                          </p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 offset-md-1 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">
-                            Belk_667_C
-                            <small class="float-sm-right">4153</small>
-                          </h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">3-Production</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">Sudden Link</div>
-                          <p class="card-text">
-                            <p>Function: voip</p>
-                            <p>ID: Belk_667_Backup</p>
-                            <p>ServiceType: VOIP</p>
-                            <p>OwnerShip: S2S Provisioned</p>
-                          </p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 card card-border">
-                        <div class="card-body" style="padding: 1.25rem .25rem">
-                          <h5 class="card-title text-primary font-weight-bold">
-                            Belk_667_C
-                            <small class="float-sm-right">4153</small>
-                          </h5>
-                          <div style="width: 60%;" class="mb-2 float-left text-muted">3-Production</div>
-                          <div style="width: 40%;" class="mb-2 float-right text-muted text-right">Sudden Link</div>
-                          <p class="card-text">
-                            <p>Function: voip</p>
-                            <p>ID: Belk_667_Backup</p>
-                            <p>ServiceType: VOIP</p>
-                            <p>OwnerShip: S2S Provisioned</p>
-                          </p>
-                          <div class="text-center col-md-12">
-                            <a href="#" class="col-md-4 offset-md-3 btn btn-sm btn-block btn-primary">
-                              <i class="fa fa-edit mr-2"></i>Edit
-                            </a>
-                          </div>
-                        </div>
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
                       </div>
                     </div>
-                    <nav aria-label="Page navigation example">
-                      <ul class="pagination justify-content-center">
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            <span class="sr-only">Next</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
-                    <!-- <div class="col-md-6 com-md-push-3">
-                              <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-2">At&t</h5>
-                                    <small>3 days ago</small>
-                                  </div>
-                                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
-                                    risus varius blandit.</p>
-                                  <small>Donec id elit non mi porta.</small>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Belk Inc</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                  </div>
-                                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
-                                    risus varius blandit.</p>
-                                  <small class="text-muted">Donec id elit non mi porta.</small>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                  </div>
-                                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
-                                    risus varius blandit.</p>
-                                  <small class="text-muted">Donec id elit non mi porta.</small>
-                                </a>
-                              </div>
-                            </div> -->
                   </div>
-                </div>
-              </div>
-            </div>
+
+          </div>
+          <div class="tab-pane fade" id="nav-devices" role="tabpanel" aria-labelledby="nav-devices-tab">
+
+          </div>
+          <div class="tab-pane fade" id="nav-dispatch" role="tabpanel" aria-labelledby="nav-dispatch-tab">
+
           </div>
         </div>
       </div>
@@ -831,6 +763,662 @@
     </div>
   </div>
 
+
+  <div class="modal fade" id="notesEditModal" tabindex="-1" role="dialog" aria-labelledby="notesEditModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel1">Site Notes</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                  <label for="notes">Notes</label>
+                  <textarea class="form-control" id="notes" rows="5"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success btn-block"><i class="ti-save"></i> Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="modal fade" id="prequalEditModal" tabindex="-1" role="dialog" aria-labelledby="prequalEditModal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel1">PreQualification</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+              <form action="#">
+                  <div class="form-body">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="control-label required">Provider</label>
+                          <select class="form-control" data-placeholder="Select State" tabindex="1">
+                            <option value="state">AT&T</option>
+                            <option value="state">Spectrum</option>
+                            <option value="state">SuddenLink</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="control-label required">Requestor</label>
+                          <input type="text" id="company_name" class="form-control" value="Gibi Systems">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="control-label required">Owner</label>
+                          <input type="text" id="owner" class="form-control" value="Gibi Systems">
+                        </div>
+                      </div>
+                    </div>
+                    <!--/row-->
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="control-label required">Date Requested</label>
+                          <input type="text" id="date" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="control-label required">Service Type</label>
+                          <select class="form-control" data-placeholder="Select State" tabindex="4">
+                            <option value="state">Cable</option>
+                            <option value="state">ADSL</option>
+                            <option value="state">DIA Fiber</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="control-label required">Action</label>
+                          <select class="form-control" data-placeholder="Select Action" tabindex="4">
+                            <option value="state">Pending Prequal</option>
+                            <option value="state">Prequal Complete</option>
+                            <option value="state">Pending Pricing</option>
+                            <option value="state">Pricing Complete</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/row-->
+                    <!--/row-->
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="control-label">ISP Rep Name</label>
+                          <input type="text" id="created_by" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="control-label">ISP Rep Phone</label>
+                          <input type="text" id="created_by" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="control-label">ISP Rep Email</label>
+                          <input type="text" id="created_by" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <!--/row-->
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="control-label required">Record Status</label>
+                          <select class="form-control" data-placeholder="Select Action" tabindex="4">
+                            <option value="state">Active</option>
+                            <option value="state">Closed</option>
+                            <option value="state">No Service</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="control-label required">Circuit</label>
+                          <input type="text" id="circuit" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <!--/row-->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="control-label">Notes</label>
+                          <textarea class="form-control" rows="4" id="comments"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="control-label">General Site Notes</label>
+                          <textarea class="form-control" rows="4" id="comments"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+          </div>
+          <div class="modal-footer">
+
+                  <button type="button" class="btn btn-success m-auto"><i class="ti-save" style="margin-right:.3rem;"></i> Save</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="circuitEditModal" tabindex="-1" role="dialog" aria-labelledby="circuitEditModal">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel1">Circuit Information</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-header">
+                            <nav class="bg-white">
+                                <div class="nav nav-pills nav-fill" id="nav-tab" role="tablist">
+                                  <a class="nav-item nav-link active" id="nav-generainfo-tab" data-toggle="tab" href="#nav-general-info" role="tab"
+                                    aria-controls="nav-general-info" aria-selected="true">General Info</a>
+                                  <a class="nav-item nav-link" id="nav-billing-tab" data-toggle="tab" href="#nav-billing" role="tab"
+                                    aria-controls="nav-billing" aria-selected="false">Billing</a>
+                                  <a class="nav-item nav-link" id="nav-dates-tab" data-toggle="tab" href="#nav-dates" role="tab"
+                                    aria-controls="nav-dates" aria-selected="false">Dates</a>
+                                  <a class="nav-item nav-link" id="nav-network-info-tab" data-toggle="tab" href="#nav-network-info" role="tab"
+                                  aria-controls="nav-network-info" aria-selected="false">Network Info</a>
+                                  <a class="nav-item nav-link" id="nav-ip-info-tab" data-toggle="tab" href="#nav-ip-info" role="tab"
+                                  aria-controls="nav-ip-info" aria-selected="false">IP Info</a>
+                                </div>
+                              </nav>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="tab-content" id="nav-tabContent-circuit">
+                                <div class="tab-pane fade show active" id="nav-general-info" role="tabpanel" aria-labelledby="nav-site-tab">
+
+                                  <form action="#">
+                                    <div class="form-body">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="form-group">
+                                            <label class="control-label required">Circuit ID</label>
+                                            <input type="text" id="circuit-id" class="form-control" value="Cellular Wireless.1">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="form-group">
+                                            <label class="control-label required">Circuit Name</label>
+                                            <input type="text" id="circuit-id" class="form-control" value="Belk_667_Cellular Wireless">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="form-group">
+                                            <label class="control-label required">Friendly Name</label>
+                                            <input type="text" id="circuit-id" class="form-control" value="Belk_667_Cellular Wireless">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Status</label>
+                                                <select class="form-control" data-placeholder="Select State" tabindex="1">
+                                                    <option value="state">2-Order Place</option>
+                                                    <option value="state">3-Production</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Circuit Rank</label>
+                                                <select class="form-control" data-placeholder="Select State" tabindex="1">
+                                                    <option value="state">Data</option>
+                                                    <option value="state">Primary</option>
+                                                    <option value="state">Secondary</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Circuit Purpose</label>
+                                                <input type="text" id="circuit-id" class="form-control" value="Belk_667_Cellular Wireless">
+                                              </div>
+                                            </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">ID (goc)</label>
+                                                <input type="text" id="circuit-id" class="form-control" value="Cellular Wireless.1">
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">ID (Billing)</label>
+                                                <input type="text" id="circuit-id" class="form-control" value="Belk_667_Cellular Wireless">
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Circuit Provider</label>
+                                                <select class="form-control" data-placeholder="Select State" tabindex="1">
+                                                    <option value="state">AT&T</option>
+                                                    <option value="state">Spectrum</option>
+                                                    <option value="state">SuddenLink</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Service Types</label>
+                                                <select class="form-control" data-placeholder="Select State" tabindex="1">
+                                                    <option value="state">Fios</option>
+                                                    <option value="state">Fios Internet</option>
+                                                    <option value="state">SuddenLink</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Management Level</label>
+                                                <select class="form-control" data-placeholder="Select State" tabindex="1">
+                                                    <option value="state">Reactive</option>
+                                                    <option value="state">Proactive</option>
+                                                    <option value="state">Internal Proactive</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Ownership Level</label>
+                                                <select class="form-control" data-placeholder="Select State" tabindex="1">
+                                                    <option value="state">S2S Provisioned</option>
+                                                    <option value="state">Customer Provisioned</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-3">
+                                              <div class="form-group">
+                                                <label class="control-label required">National Acct#</label>
+                                                <input type="text" id="circuit-id" class="form-control" value="">
+                                              </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                              <div class="form-group">
+                                                <label class="control-label required">Parent Acct#</label>
+                                                <input type="text" id="circuit-id" class="form-control" value="">
+                                              </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                              <div class="form-group">
+                                                <label class="control-label required">Child Acct#</label>
+                                                <input type="text" id="circuit-id" class="form-control" value="">
+                                              </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                  <label class="control-label required">Local Acc#</label>
+                                                  <input type="text" id="circuit-id" class="form-control" value="Cellular Wireless.1">
+                                                </div>
+                                              </div>
+                                      </div>
+                                      <div class="row">
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Local LEC</label>
+                                                <input type="text" id="circuit-id" class="form-control" value="Belk_667_Cellular Wireless">
+                                              </div>
+                                            </div>
+
+                                          <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Speed Down</label>
+                                                <input type="text" id="circuit-id" class="form-control" value="">
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Speed Up</label>
+                                                <input type="text" id="circuit-id" class="form-control" value="">
+                                              </div>
+                                            </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Circuit Install Phone#</label>
+                                                <input type="text" id="circuit-id" class="form-control" value="">
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Tech Support Phone#</label>
+                                                <input type="text" id="circuit-id" class="form-control" value="">
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Account Password</label>
+                                                <input type="password" id="circuit-id" class="form-control" value="">
+                                              </div>
+                                            </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-8">
+                                              <div class="form-group">
+                                                <label class="control-label required">Equipment Location</label>
+                                                <textarea class="form-control" rows="4" id="comments"></textarea>
+                                              </div>
+                                            </div>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="tab-pane fade" id="nav-billing" role="tabpanel" aria-labelledby="nav-site-tab">
+                                    <form action="#">
+                                      <div class="form-body">
+                                        <div class="row">
+                                          <div class="col-md-4">
+                                            <div class="form-group">
+                                              <label class="control-label required">Bill Start Date</label>
+                                              <input type="text" id="company_name" class="form-control" value="">
+                                            </div>
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="form-group">
+                                              <label class="control-label required">Bill End Date</label>
+                                              <input type="text" id="company_name" class="form-control" value="">
+                                            </div>
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="form-group">
+                                              <label class="control-label required">Rebate Type</label>
+                                              <input type="text" id="owner" class="form-control" value="">
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Rebate Amount</label>
+                                                <input type="text" id="owner" class="form-control" value="">
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label class="control-label required">Early Term Fees</label>
+                                                <input type="text" id="owner" class="form-control" value="Gibi Systems">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="nav-dates" role="tabpanel" aria-labelledby="nav-site-tab">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <div class="card">
+                                          <div class="card-header">Dates</div>
+                                          <div class="card-body">
+                                            <form action="#">
+                                              <div class="form-body">
+                                                <div class="row">
+                                                  <div class="col-md-4">
+                                                    <div class="form-group">
+                                                      <label class="control-label required">Customer Order Date</label>
+                                                      <input type="text" id="company_name" class="form-control" value="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                    <div class="form-group">
+                                                      <label class="control-label required">Customer Cancel Date</label>
+                                                      <input type="text" id="company_name" class="form-control" value="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                    <div class="form-group">
+                                                      <label class="control-label required">ISP Order Date</label>
+                                                      <input type="text" id="owner" class="form-control" value="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="row">
+                                                    <div class="col-md-4">
+                                                      <div class="form-group">
+                                                        <label class="control-label required">Last Upgrade Date</label>
+                                                        <input type="text" id="owner" class="form-control" value="">
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                      <div class="form-group">
+                                                        <label class="control-label required">FOC Date</label>
+                                                        <input type="text" id="owner" class="form-control" value="Gibi Systems">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <div class="card">
+                                          <div class="card-header">Old Dates</div>
+                                          <div class="card-body">
+                                            <form action="#">
+                                              <div class="form-body">
+                                                <div class="row">
+                                                  <div class="col-md-4">
+                                                    <div class="form-group">
+                                                      <label class="control-label required">Site Survey Order Date</label>
+                                                      <input type="text" id="company_name" class="form-control" value="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                    <div class="form-group">
+                                                      <label class="control-label required">Site Survey Completed Date</label>
+                                                      <input type="text" id="company_name" class="form-control" value="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                    <div class="form-group">
+                                                      <label class="control-label required">Site Survey End Date</label>
+                                                      <input type="text" id="owner" class="form-control" value="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="row">
+                                                    <div class="col-md-4">
+                                                      <div class="form-group">
+                                                        <label class="control-label required">Internet End Date</label>
+                                                        <input type="text" id="owner" class="form-control" value="">
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                      <div class="form-group">
+                                                        <label class="control-label required">Connection Scheduled Date</label>
+                                                        <input type="text" id="owner" class="form-control" value="Gibi Systems">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-network-info" role="tabpanel" aria-labelledby="nav-site-tab">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="card">
+                                        <div class="card-header">Cellular Info</div>
+                                        <div class="card-body">
+                                          <form action="#">
+                                            <div class="form-body">
+                                              <div class="row">
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                    <label class="control-label required">Modern ESN IMEI MEID</label>
+                                                    <input type="text" id="company_name" class="form-control" value="">
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                    <label class="control-label required">Modern CPE ICCID</label>
+                                                    <input type="text" id="company_name" class="form-control" value="">
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                    <label class="control-label required">Date Plan</label>
+                                                    <input type="text" id="owner" class="form-control" value="">
+                                                  </div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-md-4">
+                                                    <div class="form-group">
+                                                      <label class="control-label required">Data Pool Name</label>
+                                                      <input type="text" id="owner" class="form-control" value="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                    <div class="form-group">
+                                                      <label class="control-label required">Circuit Pooled</label>
+                                                      <input type="text" id="owner" class="form-control" value="Gibi Systems">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="card">
+                                        <div class="card-header">Modem Info</div>
+                                        <div class="card-body">
+                                          <form action="#">
+                                            <div class="form-body">
+                                              <div class="row">
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                    <label class="control-label required">CPE Ownership</label>
+                                                    <input type="text" id="company_name" class="form-control" value="">
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                    <label class="control-label required">CPE Make/Model</label>
+                                                    <input type="text" id="company_name" class="form-control" value="">
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                    <label class="control-label required">CPE Serial Number</label>
+                                                    <input type="text" id="owner" class="form-control" value="">
+                                                  </div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-md-4">
+                                                    <div class="form-group">
+                                                      <label class="control-label required">CPE Internet Address</label>
+                                                      <input type="text" id="owner" class="form-control" value="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                    <div class="form-group">
+                                                      <label class="control-label required">CPE Login</label>
+                                                      <input type="text" id="owner" class="form-control" value="Gibi Systems">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                    <div class="form-group">
+                                                      <label class="control-label required">CPE Password</label>
+                                                      <input type="password" id="owner" class="form-control" value="Gibi Systems">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-ip-info" role="tabpanel" aria-labelledby="nav-site-tab">
+                                </div>
+                            </div>
+
+                          <!-- <div class="col-md-6 com-md-push-3">
+                                    <div class="list-group">
+                                      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                                        <div class="d-flex w-100 justify-content-between">
+                                          <h5 class="mb-2">At&t</h5>
+                                          <small>3 days ago</small>
+                                        </div>
+                                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                          risus varius blandit.</p>
+                                        <small>Donec id elit non mi porta.</small>
+                                      </a>
+                                      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-between">
+                                          <h5 class="mb-1">Belk Inc</h5>
+                                          <small class="text-muted">3 days ago</small>
+                                        </div>
+                                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                          risus varius blandit.</p>
+                                        <small class="text-muted">Donec id elit non mi porta.</small>
+                                      </a>
+                                      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-between">
+                                          <h5 class="mb-1">List group item heading</h5>
+                                          <small class="text-muted">3 days ago</small>
+                                        </div>
+                                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                          risus varius blandit.</p>
+                                        <small class="text-muted">Donec id elit non mi porta.</small>
+                                      </a>
+                                    </div>
+                                  </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="modal-footer">
+
+                    <button type="button" class="btn btn-success m-auto"><i class="ti-save" style="margin-right:.3rem;"></i> Save</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
   <!-- ============================================================== -->
   <!-- End Page wrapper  -->
